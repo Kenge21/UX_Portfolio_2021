@@ -295,17 +295,49 @@ p {
     justify-content: flex-end;
     padding-top: 25px;
     padding-right: 25px;
+    cursor: pointer;
+    color: #0d1112;
+    outline: none;
 }
 
-.email a {
-    color: #0d1112;
-    text-decoration: 0px;
-    margin: 0px;
+.email:focus #email-text-1,
+.email:focus #email-text-2 {
+    opacity: 0;
 }
 
-.email a:hover {
-    color: #0d1112;
-    text-decoration: underline;
+.email:focus #email-text-3 {
+    opacity: 1;
+    transition: .25s
+}
+
+#email-text-1, #email-text-2 {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    right: 200;
+}
+
+#email-text-3 {
+    cursor: default;
+    position: absolute;
+    margin-top: 60px;
+    right: calc(50% - 100px);
+    color: #fff8f2;
+    opacity: 0;
+    transition: 2.5s;
+    transition-timing-function: cubic-bezier(1, -1, 1, .5);
+}
+
+#email-text-2 {
+    margin-right: 75px;
+}
+
+.email #email-text-1, .email:hover #email-text-2 {
+    opacity: 1;
+}
+
+.email:hover #email-text-1, .email #email-text-2 {
+    opacity: 0;
 }
 
 /* Footer CSS below --------- */

@@ -13,6 +13,11 @@
     src: url("../fonts/Juliette-Symbols.otf") format("opentype");
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
 h1 {
     font-family: 'Juliette-Uncut';
     font-size: 75px;
@@ -56,6 +61,7 @@ p {
 .navigation-container {
     width: 100%;
     background-color: #D0A285 !important;
+    scroll-snap-align: start;
 }
 
 .logo-container {
@@ -107,6 +113,11 @@ p {
     font-size: 16px;
     color: #0d1112;
     text-decoration: none;
+}
+
+.dropbtn a:hover {
+    color: #b96d49;
+    transition: 0.3s ease-in-out;
 }
 
 .dropdown-content {
@@ -173,6 +184,7 @@ p {
     justify-content: center;
     align-items: center;
     padding-top: 100px;
+    scroll-snap-align: start;
 }
 
 .hero-container h4 {
@@ -198,6 +210,7 @@ p {
     display: flex;
     justify-content: center;
     padding-top: 100px;
+    scroll-snap-align: start;
 }
 
 .project-image img {
@@ -212,6 +225,7 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 100px 0px;
+    scroll-snap-align: start;
 }
 
 .project-overview h6 {
@@ -231,6 +245,7 @@ p {
 .our-process-container {
     background-color: #d0a285;
     padding: 100px 0px;
+    scroll-snap-align: start;
 }
 
 .our-process-container h2 {
@@ -269,6 +284,7 @@ p {
 
 .research-plan-container {
     padding-top: 100px;
+    scroll-snap-align: start;
 }
 
 .research-plan-container h2 {
@@ -295,6 +311,7 @@ p {
 .gathering-insights-container {
     padding: 100px 0px;
     background-color: #0d1112;
+    scroll-snap-align: start;
 }
 
 .gathering-insights-container h2 {
@@ -324,6 +341,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: start;
 }
 
 .user-persona-container h2 {
@@ -346,6 +364,7 @@ p {
 
 .competitor-analysis-container {
     padding: 100px 0px;
+    scroll-snap-align: start;
 }
 
 .competitor-analysis-container h2 {
@@ -400,6 +419,7 @@ p {
 .problem-statement-container {
     background-color: #0d1112;
     padding: 100px 0px;
+    scroll-snap-align: start;
 }
 
 .problem-statement-content {
@@ -423,6 +443,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: start;
 }
 
 .features-container h2 {
@@ -446,6 +467,7 @@ p {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
+    scroll-snap-align: start;
 }
 
 .style-guide-container h2 {
@@ -506,6 +528,7 @@ p {
 
 .moodboard-container {
     padding: 100px 0px;
+    scroll-snap-align: start;
 }
 
 .moodboard-container h2 {
@@ -526,6 +549,7 @@ p {
 /* User Testing Section ----------- */
 .user-testing-container {
     padding: 100px 0px;
+    scroll-snap-align: start;
 }
 
 .user-testing-container h2 {
@@ -556,6 +580,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: start;
 }
 
 .final-prototype-container h2 {
@@ -584,6 +609,7 @@ p {
     padding: 100px 0px;
     text-align: center;
     background-color: #D0A285;
+    scroll-snap-align: start;
 }
 
 .conclusion-container p {
@@ -593,6 +619,7 @@ p {
 /* Next Case Study Section ----------- */
 .next-cs-container {
     max-width: 100%;
+    scroll-snap-align: start;
 }
 
 .next-cs-container h2 {
