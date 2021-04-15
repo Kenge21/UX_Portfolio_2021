@@ -1,0 +1,444 @@
+@font-face {
+    font-family: 'Juliette-Regular';
+    src: url("../fonts/Juliette-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Juliette-Uncut';
+    src: url("../fonts/Juliette-Uncut.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Juliette-Symbols';
+    src: url("../fonts/Juliette-Symbols.otf") format("opentype");
+}
+
+h1 {
+    font-family: 'Juliette-Uncut';
+    font-size: 75px;
+}
+
+h2 {
+    font-family: 'Juliette-Uncut';
+    font-size: 50px;
+    margin: 25px 0px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Juliette-Uncut';
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-family: 'Avenir Next';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h5 {
+    font-family: 'Avenir Next';
+    font-size: 18px;
+}
+
+h6 {
+    font-family: 'Avenir Next';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Avenir Next';
+    font-size: 16px;
+}
+
+/* Navigation Below */ 
+
+.navigation-container {
+    position: absolute;
+    width: 100%;
+    background-color: transparent !important;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+}
+
+.logo {
+    font-family: 'Juliette-Uncut';
+    font-size: 18px;
+    color: #fff8f2 !important;
+    padding: 16px;
+    margin-right: 0px;
+    letter-spacing: 1px;
+}
+
+.logo:hover {
+
+}
+
+.nav-items-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    font-family: 'Juliette-Uncut';
+    font-size: 16px;
+    padding: 16px;
+    color: #fff8f2;
+    border: none;
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+  
+.dropdown:hover .dropbtn {
+    color: #b96d49;
+    transition: .3s ease-in-out;
+}
+
+.dropbtn a {
+    font-family: 'Juliette-Uncut';
+    font-size: 16px;
+    color: #fff8f2;
+    text-decoration: none;
+}
+
+.dropbtn a:hover {
+    color: #b96d49;
+    transition: 0.3s ease-in-out;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0d1112;
+    width: 165px;
+    z-index: 999;
+}
+ 
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.dropdown-content a {
+    color: #fff8f2;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 22px;
+    padding-right: 18px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Avenir Next';
+    font-size: 16px;
+}
+  
+.dropdown-content a:hover {
+    color: #b96d49;
+    transition: .3s ease-in-out;
+}
+
+/* button css below */
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.button-outline {
+    font-family: 'Juliette-Symbols';
+    font-size: 175px;
+    color: #fff8f2;
+}
+
+.button-text {
+    font-family: 'Juliette-Uncut';
+    font-size: 24px;
+    color: #fff8f2;
+    position: absolute;
+    padding-top: 15px;
+}
+
+/* hero section css below */
+
+.hero-section {
+    height: 950px;
+    background-color: #0d1112;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.hero-section h1 {
+    color: #fff8f2;
+}
+
+.hero-section a {
+    text-decoration: none;
+    color: #fff8f2;
+}
+
+/* project section css below */
+
+.project-section {
+    margin: 0px;
+}
+
+.project-info-1 {
+    background-color: #D0A285;
+    color: #0d1112;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.project-info-2 {
+    background-color: #f5d8c4;
+    color: #0d1112;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.project-info-3 {
+    background-color: #fff8f2;
+    color: #0d1112;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.project-image-1 {
+    background-image: url("../images/zara-project.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.project-image-2 {
+    background-image: url("../images/Books-for-keeps-cover-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.project-image-3 {
+    background-image: url("../images/foodie-friends-cover-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* get in touch css below  ----------- */
+
+.get-in-touch {
+    background-color: #b96d49;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    scroll-snap-align: start;
+}
+
+.get-in-touch-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.get-in-touch .button-outline {
+    color: #0d1112;
+}
+
+.get-in-touch .button-text {
+    color: #0d1112;
+}
+
+.get-in-touch a {
+    text-decoration: none;
+    color: #0d1112;
+}
+
+.dividing-line img {
+    width: 100%;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    scroll-snap-align: start;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 25px;
+}
+
+.social a {
+    margin-right: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #0d1112;
+    text-decoration: 0px;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+.email a {
+    color: #0d1112;
+    text-decoration: 0px;
+    margin: 0px;
+}
+
+.email a:hover {
+    color: #0d1112;
+    text-decoration: underline;
+}
+
+/* Footer CSS below --------- */
+
+.icons {
+    border-radius: 50%;
+}
+
+.footer-container {
+    background-color: #0d1112;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #fff8f2;
+}
+
+.footer-container a:hover {
+    color: #b96d49;
+}
+
+.footer-container p:hover {
+    color: #b96d49;
+}
+
+.footer-container p {
+    padding: 7px 0px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* Responsive Web Design CSS below  ----------- */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+        h1 {
+        font-size: 65px;
+    }
+
+    .button-text {
+        font-size: 20px;
+    }
+
+    .button-outline {
+        font-size: 160px;
+    }
+
+    .hero-section {
+        height: 800px;
+        padding: 150px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    h1 {
+        font-size: 85px;
+    }
+
+    .button-text {
+        font-size: 24px;
+    }
+
+    .button-outline {
+        font-size: 200px;
+    }
+
+    .hero-section {
+        height: 1080px;
+        padding: 200px;
+    }
+}

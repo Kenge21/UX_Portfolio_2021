@@ -1,0 +1,714 @@
+@font-face {
+    font-family: 'Juliette-Regular';
+    src: url("../fonts/Juliette-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Juliette-Uncut';
+    src: url("../fonts/Juliette-Uncut.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Juliette-Symbols';
+    src: url("../fonts/Juliette-Symbols.otf") format("opentype");
+}
+
+h1 {
+    font-family: 'Juliette-Uncut';
+    font-size: 75px;
+}
+
+h2 {
+    font-family: 'Juliette-Uncut';
+    font-size: 50px;
+}
+
+h3 {
+    font-family: 'Juliette-Uncut';
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-family: 'Avenir Next';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h5 {
+    font-family: 'Avenir Next';
+    font-size: 18px;
+}
+
+h6 {
+    font-family: 'Avenir Next';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Avenir Next';
+    font-size: 16px;
+}
+
+/* Navigation Below */ 
+
+.navigation-container {
+    width: 100%;
+    background-color: #D0A285 !important;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+}
+
+.logo {
+    font-family: 'Juliette-Uncut';
+    font-size: 18px;
+    color: #0d1112 !important;
+    padding: 16px;
+    margin-right: 0px;
+    letter-spacing: 1px;
+}
+
+.logo:hover {
+
+}
+
+.nav-items-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    font-family: 'Juliette-Uncut';
+    font-size: 16px;
+    padding: 16px;
+    color: #0d1112;
+    border: none;
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+  
+.dropdown:hover .dropbtn {
+    color: #b96d49;
+    transition: .3s ease-in-out;
+}
+
+.dropbtn a {
+    font-family: 'Juliette-Uncut';
+    font-size: 16px;
+    color: #0d1112;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D0A285;
+    width: 165px;
+    z-index: 999;
+}
+ 
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.dropdown-content a {
+    color: #0d1112;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 22px;
+    padding-right: 18px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Avenir Next';
+    font-size: 16px;
+}
+  
+.dropdown-content a:hover {
+    color: #b96d49;
+    transition: .3s ease-in-out;
+}
+
+/* button css below */
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.button-outline {
+    font-family: 'Juliette-Symbols';
+    font-size: 175px;
+    color: #fff8f2;
+}
+
+.button-text {
+    font-family: 'Juliette-Uncut';
+    font-size: 24px;
+    color: #fff8f2;
+    position: absolute;
+    padding-top: 15px;
+}
+
+/* hero section css below */
+
+.hero-container {
+    background-color: #D0A285;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.hero-container h4 {
+    margin-top: 35px;
+}
+
+.hero-container h1 {
+    margin-top: 35px;
+}
+
+.hero-container .button-outline {
+    color: #0d1112;
+}
+
+.hero-container a {
+    color: #0d1112;
+    text-decoration: none;
+} 
+
+/* project image css below */
+
+.project-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.project-image img {
+    height: 700px;
+    object-fit: contain;
+}
+
+/* project overview css below */
+
+.project-overview-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 100px 0px;
+}
+
+.project-overview h6 {
+    margin-bottom: 20px;
+}
+
+.project-details h6 {
+    margin-bottom: 20px;
+}
+
+.project-details p {
+    margin-bottom: 50px;
+}
+
+/* our process css below */
+
+.our-process-container {
+    background-color: #d0a285;
+    padding: 100px 0px;
+}
+
+.our-process-container h2 {
+    text-align: center;
+}
+
+.our-process-container .ph-arrow-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+}
+.process-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.process-item {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    border: solid 1px #0d1112;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 25px;
+}
+
+.process-item h5 {
+    margin: 0px;
+}
+
+/* create a plan css below */
+
+.research-plan-container {
+    padding-top: 100px;
+}
+
+.research-plan-container h2 {
+    text-align: center;
+}
+
+.research-plan-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 100px 0px;
+}
+
+.research-plan-content h6 {
+    margin-bottom: 20px;
+}
+
+.research-plan-content p {
+    margin-bottom: 50px;
+}
+
+/* Gathering Insights Section ----------- */
+
+.gathering-insights-container {
+    padding: 100px 0px;
+    background-color: #0d1112;
+}
+
+.gathering-insights-container h2 {
+    text-align: center;
+    color: #fff8f2;
+    padding-bottom: 50px;
+}
+
+.gathering-insights-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gathering-insights-content .left-column {
+    margin-right: 50px;
+    color: #fff8f2;
+}
+
+.gathering-insights-content .right-column {
+    color: #D0A285;
+}
+
+/* Results User Persona Section ----------- */
+.user-persona-container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-persona-container h2 {
+    text-align: center;
+}
+
+.user-persona-container p {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.user-persona-container img {
+    margin-top: 50px;
+    height: 602px;
+    object-fit: contain;
+    width: 960px;
+}
+
+/* Competitor Analysis Section ----------- */
+
+.competitor-analysis-container {
+    padding: 100px 0px;
+}
+
+.competitor-analysis-container h2 {
+    text-align: center;
+}
+
+.competitor-analysis-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.competitor-analysis-content p {
+    text-align: center;
+}
+
+.competitor-analysis-content .left-column {
+    margin: 0px 45px;
+}
+
+.competitor-analysis-content .middle-column {
+    margin: 0px 45px;
+}
+
+.competitor-analysis-content .right-column {
+    margin: 0px 45px;
+}
+
+.left-column img {
+    height: 50px;
+    width: 155px;
+    object-fit: contain;
+    margin-bottom: 50px;
+}
+
+.middle-column img {
+    height: 50px;
+    width: 155px;
+    object-fit: contain;
+    margin-bottom: 50px;
+}
+
+.right-column img {
+    height: 50px;
+    width: 150px;
+    object-fit: contain;
+    margin-bottom: 50px;
+}
+
+/* Defining the Problem Statement Section ----------- */
+.problem-statement-container {
+    background-color: #0d1112;
+    padding: 100px 0px;
+}
+
+.problem-statement-content {
+
+}
+
+.problem-statement-container h2 {
+    color: #fff8f2;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.problem-statement-content p {
+    color: #fff8f2;
+    text-align: center;
+}
+
+/* Exploring Features Section ----------- */
+.features-container {
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-container h2 {
+    text-align: center;
+}
+
+.features-container p {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.features-container img {
+    margin-top: 50px;
+    height: 575px;
+    object-fit: contain;
+    width: 1050px;
+}
+
+/* Style Guide Section ----------- */
+.style-guide-container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.style-guide-container h2 {
+    text-align: center;
+}
+
+.style-guide-container p {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.style-guide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.font-one img {
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 45px;
+}
+
+.font-one p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.font-two img {
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 45px;
+}
+
+.font-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.font-two p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.color img {
+    height: 70px;
+    object-fit: contain;
+}
+
+.color p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+/* Moodboard Section ----------- */
+
+.moodboard-container {
+    padding: 100px 0px;
+}
+
+.moodboard-container h2 {
+    text-align: center;
+}
+
+.moodboard-content {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.moodboard-content img {
+    height: 400px;
+    object-fit: contain;
+}
+
+/* User Testing Section ----------- */
+.user-testing-container {
+    padding: 100px 0px;
+}
+
+.user-testing-container h2 {
+    text-align: center;
+}
+
+.user-testing-content {
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user-testing-content img {
+    height: 450px;
+    object-fit: contain;
+    margin: 0px 50px;
+}
+
+.user-testing-container p{
+    text-align: center;
+}
+
+/* Final Prototype Section ----------- */
+.final-prototype-container {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final-prototype-container h2 {
+    text-align: center;
+}
+
+.final-prototype-container img {
+    margin-top: 50px;
+    height: 500px;
+    object-fit: contain;
+    width: 910px;
+}
+
+.final-prototype-container .button-outline {
+    color: #0d1112;
+    font-size: 155px;
+}
+
+.final-prototype-container a {
+    color: #0d1112;
+    text-decoration: none;
+}
+
+/* Conclusion Section ----------- */
+.conclusion-container {
+    padding: 100px 0px;
+    text-align: center;
+    background-color: #D0A285;
+}
+
+.conclusion-container p {
+    margin-top: 50px;
+}
+
+/* Next Case Study Section ----------- */
+.next-cs-container {
+    max-width: 100%;
+}
+
+.next-cs-container h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.next-cs-container .left-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FFF8F2;
+    align-items: center;
+    padding: 50px 75px;
+    width: 100%;
+}
+
+.next-cs-container .right-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F5D8C4;
+    align-items: center;
+    padding: 50px 75px;
+    width: 100%;
+}
+
+.next-cs-container .button-outline {
+    color: #0d1112;
+    font-size: 145px;
+    padding: 0px 25px; 
+}
+
+.next-cs-container a {
+    color: #0d1112;
+    text-decoration: none;
+}
+
+/* Footer CSS below --------- */
+
+.icons {
+    border-radius: 50%;
+}
+
+.footer-container {
+    background-color: #0d1112;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #fff8f2;
+}
+
+.footer-container a:hover {
+    color: #b96d49;
+}
+
+.footer-container p:hover {
+    color: #b96d49;
+}
+
+.footer-container p {
+    padding: 7px 0px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* Responsive Web Design CSS below  ----------- */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+
+}
