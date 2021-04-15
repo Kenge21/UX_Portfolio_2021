@@ -13,6 +13,11 @@
     src: url("../fonts/Juliette-Symbols.otf") format("opentype");
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
 h1 {
     font-family: 'Juliette-Uncut';
     font-size: 75px;
@@ -162,6 +167,7 @@ p {
     font-family: 'Juliette-Symbols';
     font-size: 175px;
     color: #fff8f2;
+    cursor: default;
 }
 
 .button-text {
@@ -170,6 +176,11 @@ p {
     color: #fff8f2;
     position: absolute;
     padding-top: 15px;
+}
+
+.button-text a {
+    text-decoration: none;
+    color: #fff8f2;
 }
 
 /* hero section css below */
@@ -182,6 +193,7 @@ p {
     justify-content: center;
     text-align: center;
     padding: 50px;
+    scroll-snap-align: start;
 }
 
 .hero-section h1 {
@@ -197,6 +209,7 @@ p {
 
 .project-section {
     margin: 0px;
+    scroll-snap-align: start;
 }
 
 .project-info-1 {
@@ -251,6 +264,35 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.project-hover {
+    position: absolute;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.left {
+    left: 0;
+    right: none;
+}
+
+.right {
+    left: none;
+    right: 0;
+}
+
+.project-section:hover .project-hover {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.project-hover .button-outline {
+    font-size: 200px;
 }
 
 /* get in touch css below  ----------- */
@@ -318,17 +360,49 @@ p {
     justify-content: flex-end;
     padding-top: 25px;
     padding-right: 25px;
+    cursor: pointer;
+    color: #0d1112;
+    outline: none;
 }
 
-.email a {
-    color: #0d1112;
-    text-decoration: 0px;
-    margin: 0px;
+.email:focus #email-text-1,
+.email:focus #email-text-2 {
+    opacity: 0;
 }
 
-.email a:hover {
-    color: #0d1112;
-    text-decoration: underline;
+.email:focus #email-text-3 {
+    opacity: 1;
+    transition: .25s
+}
+
+#email-text-1, #email-text-2 {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    right: 200;
+}
+
+#email-text-3 {
+    cursor: default;
+    position: absolute;
+    margin-top: 60px;
+    right: calc(50% - 100px);
+    color: #fff8f2;
+    opacity: 0;
+    transition: 2.5s;
+    transition-timing-function: cubic-bezier(1, -1, 1, .5);
+}
+
+#email-text-2 {
+    margin-right: 75px;
+}
+
+.email #email-text-1, .email:hover #email-text-2 {
+    opacity: 1;
+}
+
+.email:hover #email-text-1, .email #email-text-2 {
+    opacity: 0;
 }
 
 /* Footer CSS below --------- */

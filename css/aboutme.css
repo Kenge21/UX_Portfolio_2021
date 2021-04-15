@@ -15,7 +15,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 h1 {
@@ -214,7 +214,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 100px 0px;
+    padding: 175px 0px;
     scroll-snap-align: start;
 }
 
