@@ -18,6 +18,10 @@ html {
     scroll-snap-type: y proximity;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1 {
     font-family: 'Juliette-Uncut';
     font-size: 75px;
@@ -443,7 +447,46 @@ p {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
+    h1 {
+    	font-size: 32px;
+    }
 
+    h2 {
+        font-size: 24px;
+    }
+
+    .mobile-unfriendly {
+        display: none;
+    }
+
+    .social {
+        flex-direction: column;
+    }
+
+    .get-in-touch {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+
+    .project-hover .button-outline {
+        font-size: 150px;
+    }
+
+    .button-text {
+        font-size: 16px;
+    }
+
+    .project-info-1, .project-info-2, .project-info-3 {
+        padding: 100px 20px;
+        text-align: center;
+    }
+
+    .project-section .project-hover {
+        opacity: 1;
+    }
 }
 
 /* Smartphones (landscape) ----------- */

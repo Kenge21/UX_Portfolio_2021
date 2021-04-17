@@ -714,9 +714,123 @@ p {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
+    /* Styles */
+        h1 {
+            font-size: 32px !important;
+        }
+    
+        h2 {
+            font-size: 24px !important;
+        }
+    
+        .mobile-unfriendly {
+            display: none !important;
+        }
+    
+        .button-text {
+            font-size: 16px;
+        }
+    
+        .hero-container {
+            text-align: center;
+        }
+    
+        img {
+            width: 100% !important;
+            height: 100% !important;
+            margin: 0px !important;
+        }
+    
+        .project-overview-container {
+            flex-direction: column-reverse;
+            padding: 40px;
+        }
+    
+        .process-icons {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .ph-arrow-down {
+            display: flex !important;
+            padding: 10px 0px;
+        }
+    
+        .research-plan-content {
+            flex-direction: column;
+            padding: 40px;
+        }
+    
+        .gathering-insights-content {
+            flex-direction: column;
+            padding: 40px;
+        }
+    
+        .user-persona-container p {
+            padding: 40px;
+        }
+    
+        .competitor-analysis-content {
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+    
+        .competitor-analysis-content img {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    
+        .problem-statement-content {
+            padding: 40px;
+        }
+    
+        .features-container p {
+            padding: 0px 40px;
+        }
 
-}
+        .style-guide-content .font-one {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 30px 0px;
+        }
+    
+        .style-guide-content .font-one img {
+            width: 200px !important;
+        }
+    
+        .style-guide-content .font-two {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 30px 0px;
+        } 
+    
+        .style-guide-content .font-two img {
+            width: 200px !important;
+        }
+    
+        .style-guide-content p {
+            padding: 0px 40px;
+        }
+    
+        .user-testing-content {
+            flex-direction: column;
+        }
+    
+        .user-testing-container p {
+            padding: 0px 40px;
+        }
+    
+        .conclusion-container p {
+            padding: 0px 40px;
+        }
+    
+        .pager {
+            padding: 20px !important;
+        }
+    }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
