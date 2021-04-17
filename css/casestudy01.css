@@ -703,6 +703,11 @@ p {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
+
+    html {
+        scroll-snap-type: unset;
+    }
+
     h1 {
         font-size: 32px !important;
     }
@@ -716,7 +721,7 @@ p {
     }
 
     .button-text {
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .hero-container {

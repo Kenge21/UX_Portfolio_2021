@@ -447,6 +447,10 @@ p {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
+    html {
+        scroll-snap-type: unset;
+    }
+
     h1 {
     	font-size: 32px;
     }
@@ -455,8 +459,34 @@ p {
         font-size: 24px;
     }
 
+    .hero-section {
+        height: 800px;
+        padding-bottom: 0px;
+    }
+
     .mobile-unfriendly {
         display: none;
+    }
+
+    .project-info-1,
+    .project-info-2,
+    .project-info-3 {
+        width: 100% !important;
+        padding-bottom: 200px !important;
+    }
+
+    .project-hover {
+        background-color: unset;
+        width: 100%;
+        position: unset;
+        height: unset;
+        margin-top: -230px;
+        z-index: 99;
+    }
+
+    .project-hover .button-outline,
+    .project-hover .button-text a {
+        color: #0d1112;
     }
 
     .social {
@@ -475,8 +505,12 @@ p {
         font-size: 150px;
     }
 
+    .project-hover .button-text {
+        font-size: 18px;
+    }
+
     .button-text {
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .project-info-1, .project-info-2, .project-info-3 {
