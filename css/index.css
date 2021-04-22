@@ -146,7 +146,7 @@ p {
     border: 1px solid #fff8f2;
     margin: 0px 10px;
     height: 45px;
-    width: 145px;
+    width: 155px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,8 +190,8 @@ p {
 }
 
 .hero-section .button {
-    margin-top: 50px;
-    width: 155px;
+    margin-top: 55px;
+    width: 175px;
 }
 
 /* project section css below */
@@ -260,7 +260,7 @@ p {
     height: 650px;
     display: flex;
     justify-content: center;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.75);
     opacity: 0;
     transition: 0.3s ease-in-out;
     align-items: center;
@@ -282,7 +282,8 @@ p {
 }
 
 .project-hover .button {
-
+    width: 215px;
+    height: 55px;
 }
 
 /* get in touch css below  ----------- */
