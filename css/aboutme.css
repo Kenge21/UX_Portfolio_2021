@@ -235,6 +235,16 @@ p {
     margin-bottom: 50px;
 }
 
+.about-me-container a {
+    color: #b96d49;
+    text-decoration: none;
+}
+
+.about-me-container a:hover {
+    font-style: italic;
+}
+
+
 /* get in touch css below  ----------- */
 
 .get-in-touch {
