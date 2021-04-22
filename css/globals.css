@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'noir-regular';
+    src: url("../fonts/NOIRetBLANC.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'noir-italic';
+    src: url("../fonts/NOIRetBLANC_Italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Juliette-Symbols';
+    src: url("../fonts/Juliette-Symbols.otf") format("opentype");
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Footer CSS below --------- */
+
+.icons {
+    border-radius: 50%;
+}
+
+.footer-container {
+    background-color: #0d1112;
+    padding-top: 50px;
+}
+
+.footer-container h3 {
+    text-decoration: none;
+    color: #fff8f2;
+    font-size: 14px;
+    font-family: 'noir-regular';
+    letter-spacing: 2px;
+}
+
+.footer-logo a {
+    font-size: 24px;
+}
+
+.footer-container a { /* Footer Header Font */
+    text-decoration: none;
+    color: #fff8f2;
+}
+
+.footer-container p {
+    padding: 7px 0px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+}
+
+.footer-work {
+    padding-bottom: 50px;
+    width: 200px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+
+    .footer-logo {
+        margin-bottom: 25px;
+    }
+
+    .footer-work {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-about-me {
+        margin-bottom: 25px;
+    }
+
+    .footer-container h3 {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .logo-container {
+        margin-left: 0px !important;
+    }
+
+    .navbar .container-fluid {
+        justify-content: center !important;
+    }
+}

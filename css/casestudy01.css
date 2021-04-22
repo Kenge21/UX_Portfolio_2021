@@ -1,43 +1,25 @@
-@font-face {
-    font-family: 'Juliette-Regular';
-    src: url("../fonts/Juliette-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Juliette-Uncut';
-    src: url("../fonts/Juliette-Uncut.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Juliette-Symbols';
-    src: url("../fonts/Juliette-Symbols.otf") format("opentype");
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
-}
-
-h1 {
-    font-family: 'Juliette-Uncut';
-    font-size: 75px;
+h1 { 
+    font-family: 'noir-regular'; /* hero section font */ 
+    font-size: 65px;
 }
 
 h2 {
-    font-family: 'Juliette-Uncut';
+    font-family: 'noir-regular'; /* project header font */ 
     font-size: 50px;
+    margin: 25px 0px;
+    text-align: center;
 }
 
 h3 {
-    font-family: 'Juliette-Uncut';
-    font-size: 18px;
+    font-family: 'noir-italic'; /* hero section font */ 
+    font-size: 75px;
     letter-spacing: 2px;
 }
 
 h4 {
     font-family: 'Avenir Next';
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h5 {
@@ -47,21 +29,26 @@ h5 {
 
 h6 {
     font-family: 'Avenir Next';
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
 }
 
 p {
     font-family: 'Avenir Next';
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.italic {
+    font-family: 'noir-italic';
 }
 
 /* Navigation Below */ 
 
 .navigation-container {
+    position: absolute;
     width: 100%;
-    background-color: #D0A285 !important;
-    scroll-snap-align: start;
+    background-color: transparent !important;
 }
 
 .logo-container {
@@ -71,16 +58,13 @@ p {
 }
 
 .logo {
-    font-family: 'Juliette-Uncut';
-    font-size: 18px;
+    font-family: 'noir-regular'; /* logo */
+    letter-spacing: 2px;
+    font-size: 24px;
     color: #0d1112 !important;
     padding: 16px;
     margin-right: 0px;
-    letter-spacing: 1px;
-}
-
-.logo:hover {
-
+    letter-spacing: 3px;
 }
 
 .nav-items-container {
@@ -94,29 +78,27 @@ p {
 }
 
 .dropbtn {
-    font-family: 'Juliette-Uncut';
-    font-size: 16px;
-    padding: 16px;
-    color: #0d1112;
+    padding: 10px 15px;
     border: none;
     background-color: transparent;
-    letter-spacing: 1px;
 }
   
 .dropdown:hover .dropbtn {
-    color: #b96d49;
     transition: .3s ease-in-out;
 }
 
 .dropbtn a {
-    font-family: 'Juliette-Uncut';
-    font-size: 16px;
+    font-family: 'noir-regular'; /* nav items */
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
     color: #0d1112;
     text-decoration: none;
+    margin: 0px 10px;
 }
 
 .dropbtn a:hover {
-    color: #b96d49;
+    font-family: 'noir-italic';
     transition: 0.3s ease-in-out;
 }
 
@@ -134,7 +116,7 @@ p {
     justify-content: flex-start;
 }
 
-.dropdown-content a {
+.dropdown-content a { 
     color: #0d1112;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -142,37 +124,49 @@ p {
     padding-right: 18px;
     text-decoration: none;
     display: block;
-    font-family: 'Avenir Next';
-    font-size: 16px;
+    font-family: 'noir-regular'; /* dropdown content */
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 14px;
 }
   
 .dropdown-content a:hover {
-    color: #b96d49;
     transition: .3s ease-in-out;
+}
+
+.button {
+    border: 1px solid;
+    margin: 0px 10px;
 }
 
 /* button css below */
 
 .button {
+    border: 1px solid #0d1112;
+    margin: 0px 10px;
+    height: 45px;
+    width: 145px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    font-family: 'noir-regular';
+    font-size: 14px;
 }
 
-.button-outline {
-    font-family: 'Juliette-Symbols';
-    font-size: 175px;
-    color: #fff8f2;
+.button:hover {
+
 }
 
-.button-text {
-    font-family: 'Juliette-Uncut';
-    font-size: 24px;
-    color: #fff8f2;
-    position: absolute;
-    padding-top: 15px;
+.button a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #0d1112 !important;
+}
+
+.button a:hover {  
+    font-family: 'noir-italic';
 }
 
 /* hero section css below */
@@ -183,8 +177,9 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 50px;
     scroll-snap-align: start;
+    height: 700px;
 }
 
 .hero-container h4 {
@@ -195,14 +190,10 @@ p {
     margin-top: 35px;
 }
 
-.hero-container .button-outline {
-    color: #0d1112;
+.hero-container .button {
+    margin-top: 50px;
+    width: 155px;
 }
-
-.hero-container a {
-    color: #0d1112;
-    text-decoration: none;
-} 
 
 /* project image css below */
 
@@ -611,6 +602,10 @@ p {
     text-decoration: none;
 }
 
+.final-prototype-container .button {
+    margin: 50px 0px;
+}
+
 /* Conclusion Section ----------- */
 .conclusion-container {
     padding: 100px 0px;
@@ -640,7 +635,7 @@ p {
     justify-content: center;
     background-color: #FFF8F2;
     align-items: center;
-    padding: 50px 75px;
+    padding: 50px;
     width: 100%;
 }
 
@@ -650,53 +645,15 @@ p {
     justify-content: center;
     background-color: #F5D8C4;
     align-items: center;
-    padding: 50px 75px;
+    padding: 50px;
     width: 100%;
 }
 
-.next-cs-container .button-outline {
-    color: #0d1112;
-    font-size: 145px;
-    padding: 0px 25px; 
-}
-
-.next-cs-container a {
-    color: #0d1112;
-    text-decoration: none;
+.next-cs-container .button  {
+    margin: 0px 50px;
 }
 
 /* Footer CSS below --------- */
-
-.icons {
-    border-radius: 50%;
-}
-
-.footer-container {
-    background-color: #0d1112;
-}
-
-.footer-container a {
-    text-decoration: none;
-    color: #fff8f2;
-}
-
-.footer-container a:hover {
-    color: #b96d49;
-}
-
-.footer-container p:hover {
-    color: #b96d49;
-}
-
-.footer-container p {
-    padding: 7px 0px;
-    margin-bottom: 0px;
-    margin-left: 3px;
-}
-
-.copyright {
-    text-align: center;
-}
 
 /* Responsive Web Design CSS below  ----------- */
 
@@ -709,23 +666,36 @@ p {
     }
 
     h1 {
-        font-size: 32px !important;
+        font-size: 40px !important;
     }
 
     h2 {
-        font-size: 24px !important;
+        font-size: 36px !important;
+    }
+
+    .button {
+        height: 55px;
+        width: 225px !important;
+    }
+
+    .button a {
+        font-size: 22px;
     }
 
     .mobile-unfriendly {
         display: none !important;
     }
 
-    .button-text {
-        font-size: 24px;
-    }
-
     .hero-container {
         text-align: center;
+        padding: 100px 20px;
+        text-align: center;
+        justify-content: space-between;
+        height: 800px;
+    }
+
+    .hero-container h1 {
+        margin: 25px 0px;
     }
 
     img {
@@ -766,12 +736,16 @@ p {
     .competitor-analysis-content {
         flex-direction: column;
         align-items: center;
-        padding: 40px;
+        margin-top: 50px;
+    }
+
+    .competitor-analysis-content p {
+        margin-bottom: 50px;
     }
 
     .competitor-analysis-content img {
-        margin-top: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 20px !important;
+        height: 50px !important;
     }
 
     .problem-statement-content {
@@ -802,8 +776,16 @@ p {
         flex-direction: column;
     }
 
+    .user-testing-content img {
+        height: 600px !important;
+    }
+
     .user-testing-container p {
         padding: 0px 40px;
+    }
+
+    .final-prototype-container img {
+        width: 350px !important;
     }
 
     .conclusion-container p {
@@ -812,6 +794,9 @@ p {
 
     .pager {
         padding: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
     }
 }
 

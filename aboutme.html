@@ -13,13 +13,13 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/aboutme.css">
 </head>
 
 <body>
 
     <!--  Navigation Section -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light navigation-container">
         <div class="container-fluid">
             <div class="logo-container">
@@ -27,11 +27,6 @@
             </div>
             <div class="collapse navbar-collapse nav-items-container" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="dropdown">
-                        <button class="dropbtn">
-                            <a href="index.html">HOME</a>
-                        </button>
-                    </li>
                     <li class="dropdown">
                         <button class="dropbtn">
                             <a href="aboutme.html">ABOUT</a>
@@ -53,6 +48,11 @@
                                 target="_blank">RESUME</a>
                         </button>
                     </li>
+                    <li class="dropdown button">
+                        <button class="dropbtn">
+                            <a href="mailto:kellienatsumienge@gmail.com">CONTACT</a>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -61,7 +61,7 @@
     <!--  Hero Section -->
     <div class="container-fluid hero-section">
         <div class="header-text">
-            <h1>HI, I'M KELLIE ENGE<br>UX DESIGNER</h1>
+                <h1>A <span class="italic">detail-oriented </span>and <span class="italic">empathetic </span><br>user experience designer that <br>works to create data driven designs <br>that use best practices for visual <br>and user experience design.</h1>
         </div>
         <div class="about-me">
             <img src="images/about-me-image.JPG">
@@ -73,28 +73,30 @@
         <div class="about-overview">
             <h6>About Me</h6>
             <p>Hi, I’m Kellie Enge, a passionate designer focused on creating
-                <br>beautiful products through realistic research, iteration and testing. 
-                <br></p>
+                <br>beautiful products through realistic research, iteration and testing.
+                <br>
+            </p>
             <p class="mobile-unfriendly">Utilizing a background in teaching, through transferable skills
-                <br>such as empathy, communication, critical thinking, and 
-                <br>organization. I transitioned from observing students and 
+                <br>such as empathy, communication, critical thinking, and
+                <br>organization. I transitioned from observing students and
                 <br>adapting teaching styles, to observing users and adapting the
                 <br>product design. Teaching gave me the opportunity to fine-tune
-                <br>my communication skills with peers, superiors and parents. 
+                <br>my communication skills with peers, superiors and parents.
                 <br>By daily formulating new and better ways to teach students I was
-                <br>able to transfer those skills to exploring out of the box ideas that 
-                <br>provide solutions for user pain points. Lastly, teaching allowed 
-                <br>for great practice preparing many different portions of a project 
-                <br>thinking both long-term and short-term.</p>
+                <br>able to transfer those skills to exploring out of the box ideas that
+                <br>provide solutions for user pain points. Lastly, teaching allowed
+                <br>for great practice preparing many different portions of a project
+                <br>thinking both long-term and short-term.
+            </p>
         </div>
         <div class="about-details">
             <h6>My Design Goals</h6>
-            <p>To iterate products from what I think users do to what users<br>actually 
-                do by taking insights and context into account and<br>focusing on 
+            <p>To iterate products from what I think users do to what users<br>actually
+                do by taking insights and context into account and<br>focusing on
                 consistency in design standards.</p>
             <h6>Other Things I Enjoy</h6>
-            <p>Taking photos, exploring new cities, taking care 
-                of my plants,<br>taking care of my dog (Koucha), and 
+            <p>Taking photos, exploring new cities, taking care
+                of my plants,<br>taking care of my dog (Koucha), and
                 creating/exploring new<br>design trends and ideas.</p>
         </div>
     </div>
@@ -103,12 +105,9 @@
 
     <div class="get-in-touch">
         <div class="get-in-touch-content">
-            <h1>GET IN TOUCH</h1>
+            <h3>Get In Touch</h3>
             <div class="button">
-                <div class="button-outline">F</div>
-                <div class="button-text">
-                    <a href="mailto: kellienatsumienge@gmail.com">email me</a>
-                </div>
+                <a href="mailto:kellienatsumienge@gmail.com">CONTACT</a>
             </div>
         </div>
         <div class="dividing-line">
@@ -129,7 +128,7 @@
                     <p>GITHUB</p>
                 </a>
             </div>
-            <div class="email mobile-unfriendly" tabindex="2">
+            <div class="email mobile-unfriendly" tabindex="1">
                 <p id="email-text-1">KELLIENATSUMIENGE@GMAIL.COM</p>
                 <p id="email-text-2">CLICK TO COPY</p>
                 <p id="email-text-3">COPIED TO CLIPBOARD</p>
@@ -145,27 +144,19 @@
         <div class="container p-4 pb-0">
             <section class="">
                 <div class="row">
-                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <div class="col-md-5 footer-logo">
                         <h3>
                             <a href="index.html">KELLIE ENGE</a>
                         </h3>
                     </div>
-                    <hr class="w-100 clearfix d-md-none" />
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <div class="col-md-2 footer-about-me">
                         <h3>
-                            <a href="index.html">HOME</a>
+                            <a href="aboutme.html">ABOUT ME</a>
                         </h3>
                     </div>
-                    <hr class="w-100 clearfix d-md-none" />
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <div class="col-md-2 footer-work">
                         <h3>
-                            <a href="aboutme.html">ABOUT</a>
-                        </h3>
-                    </div>
-                    <hr class="w-100 clearfix d-md-none" />
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h3>
-                            <a href="index.html#works">WORK</a>
+                            <a href="#works">WORK</a>
                         </h3>
                         <p>
                             <a class="text-white" href="casestudy01.html">Zara</a>
@@ -177,10 +168,15 @@
                             <a class="text-white" href="casestudy03.html">Foodie Friends</a>
                         </p>
                     </div>
-                    <hr class="w-100 clearfix d-md-none" />
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <div class="col-md-2">
                         <h3>
-                            <a href="https://docs.google.com/document/d/1oR1Fl7tVsz9aQ8aDYfuWgohQSGG-RFeYOicCOnxCADk/edit" target="_blank">RESUME</a>
+                            <a href="https://docs.google.com/document/d/1oR1Fl7tVsz9aQ8aDYfuWgohQSGG-RFeYOicCOnxCADk/edit"
+                                target="_blank">RESUME</a>
+                        </h3>
+                    </div>
+                    <div class="col-md-1">
+                        <h3>
+                            <a href="mailto:kellienatsumienge@gmail.com">CONTACT</a>
                         </h3>
                     </div>
                 </div>
@@ -192,20 +188,20 @@
                         <div class="p-3 copyright">© 2021 Kellie Enge. ALL RIGHTS RESERVED</div>
                     </div>
                     <!-- <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                        <a class="btn btn-outline-light btn-floating m-1 icons" class="text-white" role="button" target="_blank"
-                            href="https://www.linkedin.com/in/kellie-enge-b89092197/"><i class="fab fa-linkedin"></i></a>
-                        <a class="btn btn-outline-light btn-floating m-1 icons" class="text-white" role="button"
-                            href="https://dribbble.com/Kenge" target="_blank"><i class="fab fa-dribbble"></i></a>
-                        <a class="btn btn-outline-light btn-floating m-1 icons" class="text-white" role="button"
-                            href="https://www.behance.net/kellieshaw" target="_blank"><i class="fab fa-behance"></i></a>
-                        <a class="btn btn-outline-light btn-floating m-1 icons" class="text-white" role="button"
-                            href="https://github.com/Kenge21" target="_blank"><i class="fab fa-github"
-                                aria-hidden="true"></i></a>
-                    </div> -->
+                    <a class="btn btn-outline-light btn-floating m-1 icons" class="text-white" role="button" target="_blank"
+                        href="https://www.linkedin.com/in/kellie-enge-b89092197/"><i class="fab fa-linkedin"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 icons" class="text-white" role="button"
+                        href="https://dribbble.com/Kenge" target="_blank"><i class="fab fa-dribbble"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 icons" class="text-white" role="button"
+                        href="https://www.behance.net/kellieshaw" target="_blank"><i class="fab fa-behance"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 icons" class="text-white" role="button"
+                        href="https://github.com/Kenge21" target="_blank"><i class="fab fa-github"
+                            aria-hidden="true"></i></a>
+                </div> -->
                 </div>
             </section>
         </div>
-    </footer>    
-    </div>
+    </footer>
+</div>
 
 </html>

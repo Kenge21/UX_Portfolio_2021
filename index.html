@@ -18,12 +18,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- javascript -->
     <script src="js/script.js"></script>
-    <!-- css stylesheet -->
+    <!-- css stylesheets -->
+    <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-
     <!--  Navigation Section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light navigation-container">
         <div class="container-fluid">
@@ -32,11 +32,6 @@
             </div>
             <div class="collapse navbar-collapse nav-items-container" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="dropdown">
-                        <button class="dropbtn">
-                            <a href="index.html">HOME</a>
-                        </button>
-                    </li>
                     <li class="dropdown">
                         <button class="dropbtn">
                             <a href="aboutme.html">ABOUT</a>
@@ -58,6 +53,11 @@
                                 target="_blank">RESUME</a>
                         </button>
                     </li>
+                    <li class="dropdown button">
+                        <button class="dropbtn">
+                            <a href="mailto:kellienatsumienge@gmail.com">CONTACT</a>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -65,14 +65,12 @@
 
     <!--  Hero Section -->
     <div class="container-fluid hero-section">
-        <h1>A USER EXPERIENCE DESIGNER THAT ANTICIPATES AND FULFILLS USER-CENTERED PROBLEMS WITH USER-CENTERED
-            SOLUTIONS.
+        <h1>A user experience designer that <span class="italic">anticipates</span> and <span
+                class="italic">fulfills</span> user-centered problems with user-centered
+            solutions.
         </h1>
         <div class="button">
-            <div class="button-outline">F</div>
-            <div class="button-text">
-                <a href="aboutme.html">about me</a>
-            </div>
+            <a href="aboutme.html">ABOUT</a>
         </div>
     </div>
 
@@ -82,16 +80,13 @@
         <div class="row">
             <div class="col-6 project-info-1">
                 <p>UX/UI Case Study</p>
-                <h2>ZARA WEBSITE<br>REDESIGN</h2>
+                <h2>Zara Website<br>Redesign</h2>
                 <p>UX Research, Ideation, Prototyping, Testing, UI, FE Development</p>
             </div>
             <div class="col-6 project-image-1 mobile-unfriendly"></div>
             <div class="col-6 project-hover right">
                 <div class="button">
-                    <div class="button-outline">F</div>
-                    <div class="button-text">
-                        <a href="casestudy01.html">view case study</a>
-                    </div>
+                    <a href="casestudy01.html">READ MORE</a>
                 </div>
             </div>
         </div>
@@ -101,15 +96,12 @@
             <div class="col-6 project-image-2 mobile-unfriendly"></div>
             <div class="col-6 project-info-2">
                 <p>UX/UI Case Study</p>
-                <h2>BOOKS FOR KEEPS<br>WEBSITE REDESIGN</h2>
+                <h2>Books For Keeps<br>Website Redesign</h2>
                 <p>UX Research, Ideation, Prototyping, Testing, UI</p>
             </div>
             <div class="col-6 project-hover left">
                 <div class="button">
-                    <div class="button-outline">F</div>
-                    <div class="button-text">
-                        <a href="casestudy02.html">view case study</a>
-                    </div>
+                    <a href="casestudy02.html">READ MORE</a>
                 </div>
             </div>
         </div>
@@ -118,16 +110,13 @@
         <div class="row">
             <div class="col-6 project-info-3">
                 <p>UX/UI Case Study</p>
-                <h2>FOODIE FRIENDS<br>MOBILE APP</h2>
+                <h2>Foodie Friends<br>Mobile App</h2>
                 <p>UX Research, Ideation, Prototyping, Testing, UI</p>
             </div>
             <div class="col-6 project-image-3 mobile-unfriendly"></div>
             <div class="col-6 project-hover right">
                 <div class="button">
-                    <div class="button-outline">F</div>
-                    <div class="button-text">
-                        <a href="casestudy03.html">view case study</a>
-                    </div>
+                    <a href="casestudy03.html">READ MORE</a>
                 </div>
             </div>
         </div>
@@ -137,12 +126,9 @@
 
     <div class="get-in-touch">
         <div class="get-in-touch-content">
-            <h1>GET IN TOUCH</h1>
+            <h3>Get In Touch</h3>
             <div class="button">
-                <div class="button-outline">F</div>
-                <div class="button-text">
-                    <a href="mailto: kellienatsumienge@gmail.com">email me</a>
-                </div>
+                <a href="mailto:kellienatsumienge@gmail.com">CONTACT</a>
             </div>
         </div>
         <div class="dividing-line">
@@ -175,57 +161,54 @@
 
 <!--  Footer Section -->
 <div class="footer-container">
-<footer class="text-center text-lg-start text-white" style="background-color: #0d1112">
-    <div class="container p-4 pb-0">
-        <section class="">
-            <div class="row">
-                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                    <h3>
-                        <a href="index.html">KELLIE ENGE</a>
-                    </h3>
+    <footer class="text-center text-lg-start text-white" style="background-color: #0d1112">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <div class="row">
+                    <div class="col-md-5 footer-logo">
+                        <h3>
+                            <a href="index.html">KELLIE ENGE</a>
+                        </h3>
+                    </div>
+                    <div class="col-md-2">
+                        <h3>
+                            <a href="aboutme.html">ABOUT ME</a>
+                        </h3>
+                    </div>
+                    <div class="col-md-2 footer-work">
+                        <h3>
+                            <a href="#works">WORK</a>
+                        </h3>
+                        <p>
+                            <a class="text-white" href="casestudy01.html">Zara</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="casestudy02.html">Books for Keeps</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="casestudy03.html">Foodie Friends</a>
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <h3>
+                            <a href="https://docs.google.com/document/d/1oR1Fl7tVsz9aQ8aDYfuWgohQSGG-RFeYOicCOnxCADk/edit"
+                                target="_blank">RESUME</a>
+                        </h3>
+                    </div>
+                    <div class="col-md-1">
+                        <h3>
+                            <a href="mailto:kellienatsumienge@gmail.com">CONTACT</a>
+                        </h3>
+                    </div>
                 </div>
-                <hr class="w-100 clearfix d-md-none" />
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h3>
-                        <a href="index.html">HOME</a>
-                    </h3>
-                </div>
-                <hr class="w-100 clearfix d-md-none" />
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h3>
-                        <a href="aboutme.html">ABOUT</a>
-                    </h3>
-                </div>
-                <hr class="w-100 clearfix d-md-none" />
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h3>
-                        <a href="#works">WORK</a>
-                    </h3>
-                    <p>
-                        <a class="text-white" href="casestudy01.html">Zara</a>
-                    </p>
-                    <p>
-                        <a class="text-white" href="casestudy02.html">Books for Keeps</a>
-                    </p>
-                    <p>
-                        <a class="text-white" href="casestudy03.html">Foodie Friends</a>
-                    </p>
-                </div>
-                <hr class="w-100 clearfix d-md-none" />
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h3>
-                        <a href="https://docs.google.com/document/d/1oR1Fl7tVsz9aQ8aDYfuWgohQSGG-RFeYOicCOnxCADk/edit" target="_blank">RESUME</a>
-                    </h3>
-                </div>
-            </div>
-        </section>
-        <hr class="my-3">
-        <section class="p-3 pt-0">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-12 col-lg-12 text-center text-md-start">
-                    <div class="p-3 copyright">© 2021 Kellie Enge. ALL RIGHTS RESERVED</div>
-                </div>
-                <!-- <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            </section>
+            <hr class="my-3">
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-12 col-lg-12 text-center text-md-start">
+                        <div class="p-3 copyright">© 2021 Kellie Enge. ALL RIGHTS RESERVED</div>
+                    </div>
+                    <!-- <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
                     <a class="btn btn-outline-light btn-floating m-1 icons" class="text-white" role="button" target="_blank"
                         href="https://www.linkedin.com/in/kellie-enge-b89092197/"><i class="fab fa-linkedin"></i></a>
                     <a class="btn btn-outline-light btn-floating m-1 icons" class="text-white" role="button"
@@ -236,10 +219,10 @@
                         href="https://github.com/Kenge21" target="_blank"><i class="fab fa-github"
                             aria-hidden="true"></i></a>
                 </div> -->
-            </div>
-        </section>
-    </div>
-</footer>    
+                </div>
+            </section>
+        </div>
+    </footer>
 </div>
 
 </html>

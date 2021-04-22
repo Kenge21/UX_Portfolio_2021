@@ -1,39 +1,30 @@
-@font-face {
-    font-family: 'Juliette-Regular';
-    src: url("../fonts/Juliette-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Juliette-Uncut';
-    src: url("../fonts/Juliette-Uncut.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Juliette-Symbols';
-    src: url("../fonts/Juliette-Symbols.otf") format("opentype");
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
-}
-
-h1 {
-    font-family: 'Juliette-Uncut';
-    font-size: 75px;
+h1 { 
+    font-family: 'noir-regular'; /* hero section font */ 
+    font-size: 65px;
 }
 
 h2 {
-    font-family: 'Juliette-Uncut';
+    font-family: 'noir-regular'; /* project header font */ 
     font-size: 50px;
     margin: 25px 0px;
     text-align: center;
 }
 
 h3 {
-    font-family: 'Juliette-Uncut';
-    font-size: 18px;
+    font-family: 'noir-regular'; /* hero section font */ 
+    font-size: 75px;
     letter-spacing: 2px;
+}
+
+h4 {
+    font-family: 'Avenir Next';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h5 {
+    font-family: 'Avenir Next';
+    font-size: 18px;
 }
 
 h6 {
@@ -44,7 +35,12 @@ h6 {
 
 p {
     font-family: 'Avenir Next';
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.italic {
+    font-family: 'noir-italic';
 }
 
 /* Navigation Below */ 
@@ -62,16 +58,13 @@ p {
 }
 
 .logo {
-    font-family: 'Juliette-Uncut';
-    font-size: 18px;
+    font-family: 'noir-regular'; /* logo */
+    letter-spacing: 2px;
+    font-size: 24px;
     color: #fff8f2 !important;
     padding: 16px;
     margin-right: 0px;
-    letter-spacing: 1px;
-}
-
-.logo:hover {
-
+    letter-spacing: 3px;
 }
 
 .nav-items-container {
@@ -85,13 +78,9 @@ p {
 }
 
 .dropbtn {
-    font-family: 'Juliette-Uncut';
-    font-size: 16px;
-    padding: 16px;
-    color: #fff8f2;
+    padding: 10px 15px;
     border: none;
     background-color: transparent;
-    letter-spacing: 1px;
 }
   
 .dropdown:hover .dropbtn {
@@ -100,14 +89,17 @@ p {
 }
 
 .dropbtn a {
-    font-family: 'Juliette-Uncut';
-    font-size: 16px;
+    font-family: 'noir-regular'; /* nav items */
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
     color: #fff8f2;
     text-decoration: none;
+    margin: 0px 10px;
 }
 
 .dropbtn a:hover {
-    color: #b96d49;
+    font-family: 'noir-italic';
     transition: 0.3s ease-in-out;
 }
 
@@ -125,7 +117,7 @@ p {
     justify-content: flex-start;
 }
 
-.dropdown-content a {
+.dropdown-content a { 
     color: #fff8f2;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -133,37 +125,50 @@ p {
     padding-right: 18px;
     text-decoration: none;
     display: block;
-    font-family: 'Avenir Next';
-    font-size: 16px;
+    font-family: 'noir-regular'; /* dropdown content */
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 14px;
 }
   
 .dropdown-content a:hover {
-    color: #b96d49;
     transition: .3s ease-in-out;
+}
+
+.button {
+    border: 1px solid;
+    margin: 0px 10px;
 }
 
 /* button css below */
 
 .button {
+    border: 1px solid #fff8f2;
+    margin: 0px 10px;
+    height: 45px;
+    width: 145px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    font-family: 'noir-regular';
+    font-size: 14px;
 }
 
-.button-outline {
-    font-family: 'Juliette-Symbols';
-    font-size: 175px;
-    color: #fff8f2;
+.button:hover {
+
 }
 
-.button-text {
-    font-family: 'Juliette-Uncut';
-    font-size: 24px;
-    color: #fff8f2;
-    position: absolute;
-    padding-top: 15px;
+.button a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff8f2 !important;
+    transition: all .5s;
+}
+
+.button a:hover {  
+    font-family: 'noir-italic';
 }
 
 /* hero section css below */
@@ -234,9 +239,7 @@ p {
 
 .get-in-touch {
     background-color: #b96d49;
-    padding-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 50px 200px;
     scroll-snap-align: start;
 }
 
@@ -247,12 +250,16 @@ p {
     align-items: center;
 }
 
-.get-in-touch .button-outline {
-    color: #0d1112;
+.get-in-touch .button {
+    border: solid 1px #0d1112 !important;
 }
 
-.get-in-touch .button-text {
-    color: #0d1112;
+.get-in-touch .button a {
+    color: #0d1112 !important;
+}
+
+.get-in-touch .button-text a:hover {
+    font-family: 'noir-italic';
 }
 
 .get-in-touch a {
@@ -285,8 +292,14 @@ p {
     text-decoration: 0px;
 }
 
-.social a:hover {
-    text-decoration: underline;
+.social p {
+    font-family: 'noir-regular';
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.social p:hover {
+    font-family: 'noir-italic';
 }
 
 .email {
@@ -298,6 +311,12 @@ p {
     cursor: pointer;
     color: #0d1112;
     outline: none;
+}
+
+.email p {
+    font-family: 'noir-regular';
+    letter-spacing: 2px;
+    font-size: 14px;
 }
 
 .email:focus #email-text-1,
@@ -330,6 +349,7 @@ p {
 
 #email-text-2 {
     margin-right: 75px;
+    font-family: 'noir-italic';
 }
 
 .email #email-text-1, .email:hover #email-text-2 {
@@ -338,39 +358,6 @@ p {
 
 .email:hover #email-text-1, .email #email-text-2 {
     opacity: 0;
-}
-
-/* Footer CSS below --------- */
-
-.icons {
-    border-radius: 50%;
-}
-
-.footer-container {
-    background-color: #0d1112;
-}
-
-.footer-container a {
-    text-decoration: none;
-    color: #fff8f2;
-}
-
-.footer-container a:hover {
-    color: #b96d49;
-}
-
-.footer-container p:hover {
-    color: #b96d49;
-}
-
-.footer-container p {
-    padding: 7px 0px;
-    margin-bottom: 0px;
-    margin-left: 3px;
-}
-
-.copyright {
-    text-align: center;
 }
 
 /* Responsive Web Design CSS below  ----------- */
@@ -383,15 +370,38 @@ p {
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 36px;
+        margin-bottom: 0px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 36px;
+    }
+
+    .button {
+        height: 55px;
+        width: 225px ;
+    }
+
+    .button a {
+        font-size: 22px;
+    }
+
+    .hero-section {
+        height: 800px;
+        padding: 25px;
     }
 
     .mobile-unfriendly {
         display: none;
+    }
+
+    .header-text {
+        padding: 0px;
+    }
+
+    .about-me img {
+        height: 390px;
     }
 
     .social {
@@ -406,13 +416,46 @@ p {
         padding-bottom: 0px;
     }
 
+    .get-in-touch-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-in-touch-content h3 {
+        font-size: 52px;
+        margin-bottom: 25px;
+    }
+
+    .social-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-container p {
+        font-size: 18px;
+        margin-right: 0px;
+    }
+
+    .social-container a {
+        font-size: 18px;
+        margin-right: 0px;
+    }
+
     .about-me {
         overflow-x: hidden;
     }
 
     .about-me-container {
-        padding: 40px 20px;
+        padding: 40px 40px;
         flex-direction: column;
+        height: auto;
+    }
+
+    .about-overview p {
+        margin-bottom: 50px;
     }
 }
 
