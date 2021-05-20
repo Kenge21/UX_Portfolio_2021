@@ -210,6 +210,7 @@ p {
 .hero-section h1 {
     color: #fff8f2;
     z-index: 2;
+    line-height: 90px;
 }
 
 /* project overview css below */
